@@ -1,0 +1,11 @@
+
+button{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 15%;
+}
+.numPad{
+  border-style: solid;
+  border-color: white;
+  border-width: 1rem;
+}

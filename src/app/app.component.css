@@ -1,0 +1,7 @@
+
+.container-fluid{
+  background: rgb(245, 206, 66);
+}
+mat-grid-tile {
+  border-radius: 10%;
+}
