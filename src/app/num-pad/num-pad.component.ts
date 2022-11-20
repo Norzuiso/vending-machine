@@ -6,6 +6,7 @@ import {Constants} from "../Constants";
 import {LetterState} from "../state/LetterState";
 import {EnterState} from "../state/EnterState";
 import {NumberState} from "../state/NumberState";
+import {GlobalVariables} from "../global-variables.service";
 
 @Component({
   selector: 'app-num-pad',
@@ -48,7 +49,7 @@ export class NumPadComponent implements OnInit {
   ]
   title = 'vending-machine';
 
-  buttonClick(opt: string) {
-    this.textSelected.emit(opt);
+  buttonClick(opt: string, s: string) {
+    this.textSelected.emit(opt+'/'+s);
   }
 }

@@ -1,5 +1,6 @@
 import {State} from "./State";
 import {Type} from "@angular/core";
+import {GlobalVariables} from "../global-variables.service";
 
 export class Context{
 
@@ -10,7 +11,8 @@ export class Context{
   }
 
   public transitionTo(state: State): void {
-    console.log(`Context: Transition to ${(<any>state).constructor.name}.`);
+    let message = `Context: Transition to ${(<any>state).constructor.name}.`;
+    console.log(message);
     this.state = state;
     this.state.setContext(this);
   }
@@ -19,7 +21,8 @@ export class Context{
   }
 
   public request2(): string {
-    return this.state.handle2();
+    let message = ` -> ${(<any>this.state).constructor.name}.`;
+    return message;
   }
 
 }

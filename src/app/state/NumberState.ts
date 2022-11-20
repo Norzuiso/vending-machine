@@ -14,7 +14,7 @@ export class NumberState extends State {
   }
 
   handle2(): string {
-    return ''
+    return '->q0'
   }
 
 }

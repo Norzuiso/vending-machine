@@ -2,7 +2,7 @@
     <button *ngFor="let opt of colsValues"
             type="button"
             class="btn btn-secondary m-1 bg-black border-0"
-            (click)="buttonClick(opt.context.request1(values, opt.text))">
+            (click)="buttonClick(opt.context.request1(values, opt.text), opt.context.request2())">
           <span class="h4 ">
           {{opt.text}}
           </span>

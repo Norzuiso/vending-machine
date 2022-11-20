@@ -16,7 +16,7 @@ export function isValueLengthOne(value: string) {
   return value.length == 1;
 }
 
-function isValueInConstants(value: string) {
+export function isValueInConstants(value: string) {
   return Object.values(Constants).some((v) => v === value);
 }
 
