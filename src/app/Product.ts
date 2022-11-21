@@ -6,6 +6,7 @@ export class Product {
     this.code = code;
     this.img = img;
   }
+  //Esta función devuelve una lista de product con valores dummy
   getDummyProduct():Product[]{
     return [
       new Product('A01', 'assets/C1.webp'),

@@ -26,6 +26,7 @@ export class NumPadComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   colsValues = [
     new NumPadValues('A', new Context(new LetterState())),
     new NumPadValues('B', new Context(new LetterState())),
@@ -49,6 +50,7 @@ export class NumPadComponent implements OnInit {
   ]
   title = 'vending-machine';
 
+  //Esta función retorna el texto del boton presionado y el nombre del evento en el que nos encontramos
   buttonClick(opt: string, s: string) {
     this.textSelected.emit(opt+'/'+s);
   }

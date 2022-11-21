@@ -19,12 +19,14 @@ export class AppComponent {
   step: GlobalVariables = new GlobalVariables();
 
 
-  async clickedButton(text: string) {
+  //Esta función lee el texto del evento
+  clickedButton(text: string) {
+    //Si el ultimo evento registrado es q0 y no estamos en el inicio entonces volvemos al inicio
     if (this.step.step.slice(-2) == 'q0' && this.step.step != '>q0') {
       this.step.step = '>q0'
     }
+    // Dividimos el texto por cada / que tengamos y si tenemos más de 3 elementos despues de la división agregaremos el estado inicial y posteriormente el estado actual
     let texts = text.split('/');
-
     this.values = texts[0];
     if (texts.length == 3) {
       this.step.step += texts[2];

@@ -1,14 +1,12 @@
 import {State} from "./State";
 
 export class LetterState extends State {
+  //Esta función retorna el valor del boton de una letra que fue presionado
   handleClickedButton(value: string, buttonText: string): string {
-    if (value.length == 2) {
-      return buttonText + value.substring(1,value.length)
-    }
     return buttonText
   }
 
-  handle2(): string {
+  returnInitialState(): string {
     return ''
   }
 

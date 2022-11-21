@@ -8,8 +8,7 @@ export abstract class State{
     this.context = context;
   }
 
-
   public abstract handleClickedButton(value: string, buttonText: string): string;
 
-  public abstract handle2(): string;
+  public abstract returnInitialState(): string;
 }
